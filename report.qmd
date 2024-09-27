@@ -1,8 +1,75 @@
-VCU is known for their community engagement, but there isn’t much visibility for students to see VCU sports. Students struggle to find sports updates like information about tryouts, job openings, etc. We found that students have a difficult time finding player stats, game schedules, and events. 
-We want to provide the VCU community with a tool that engages all students to VCU sports. 
+title: VCU Sports Database 
+date: 
+authors:
+    - name: Natalia Tondi
+      email: tondin@vcu.edu
+    - name: Erin Anderson
+      email: andersones3@vcu.edu
+format:
+    html:
+        embed-resources: true
+        html-math-method: katex
+        theme: spacelab
+---
 
-By creating this database we are creating an awareness of VCU sports not only to VCU students, but extending it to the Richmond community and eventually elevating the level and resources of the sports. Also, this database will provide an easy way to visualize all sports information in one place. 
+---
 
-This database is for athletes, coaches, sponsors, and VCU fans. We want this database to be accessible for everybody and possibly reach out to sponsors that might be interested in a sponsorship with VCU sports. This database should be user friendly and easy to access. The scope of the database includes score tracking, sports positions, games and whether the team won or lose, peoples information like student-athlete information, coach information
+#Problem Description
+
+## Problem Domain
+
+The problem domain encompasses the visibility and accessibility of VCU sports information for students and the broader Richmond community. While VCU is recognized for its community engagement, students face challenges in staying informed about VCU sports, including tryouts, job openings, player stats, game schedules, and events. 
+
+### Context and History
+
+Richmond, known for its vibrant murals, also has a rich sports culture. However, the connection between VCU sports and students has not been fully realized. By providing a centralized resource, we aim to enhance awareness and participation in VCU sports.
+
+## Need for a Database
+
+A dedicated database is essential to address the communication gap between VCU sports and its community. This database will:
+
+- Engage students with VCU sports.
+- Raise awareness of VCU athletics in the Richmond area.
+- Consolidate sports information in one accessible location, improving visibility for all stakeholders.
+
+## Context, Scope, and Perspective
+
+The database will serve various user roles, including athletes, coaches, sponsors, agents, and fans. Our goal is to ensure accessibility for everyone, creating a user-friendly platform. The database will cover:
+
+- Score tracking and game results.
+- Player and coach information.
+- Statistics and contact details for student-athletes to facilitate professional opportunities.
+
+## User Roles and Use Cases
+
+### Student Athletes
+- **Needs**: Access to upcoming games and personal/team stats.
+- **Usage**: Check statistics, stay informed on other sports.
+
+### Coaches
+- **Needs**: Information on upcoming games and team performance.
+- **Usage**: Update job openings and player information.
+
+### Fans / Richmond Community
+- **Needs**: Information on games, rosters, and results.
+- **Usage**: Stay updated on events and job opportunities.
+
+### Sponsors and Agents
+- **Needs**: Access to athlete stats and community engagement metrics.
+- **Usage**: Connect with athletes and teams for potential sponsorships and recruitment.
+
+This database will facilitate new connections, potentially increasing VCU sports budgets and attracting more student-athletes through demonstrated professional opportunities.
+
+## Security and Privacy
+
+### Access Control
+- All users (students, coaches, fans, sponsors, agents) can read the database.
+- VCU admin can read and edit information after user authentication.
+
+### Data Encryption
+- Student-athlete contact information will be encrypted, accessible only to sponsors, agents, and coaches upon verification of their credentials.
+
+The database will be publicly accessible, promoting transparency while safeguarding sensitive information.
+
 
 

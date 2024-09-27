@@ -13,6 +13,7 @@ format:
 ---
 
 ---
+<<<<<<< HEAD
 
 #Problem Description
 
@@ -57,4 +58,7 @@ This database will provide information that will potentially create new connecti
 
 ### Data Encryption
 - Student-athlete contact information will be encrypted, accessible only to sponsors, agents, and coaches upon verification of their credentials.
+
+The database will be publicly accessible, promoting transparency while safeguarding sensitive information.
+
 

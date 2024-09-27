@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.56">
+<meta name="generator" content="quarto-1.4.543">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,35 +46,21 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>title: VCU Sports Database date: authors: - name: Natalia Tondi email: tondin@vcu.edu - name: Erin Anderson email: andersones3@vcu.edu format: html: embed-resources: true html-math-method: katex theme: spacelab</p>
+<p>title: VCU Sports Database date: September 27, 2024 authors: - name: Natalia Tondi email: tondin@vcu.edu - name: Erin Anderson email: andersones3@vcu.edu format: html: embed-resources: true html-math-method: katex theme: spacelab</p>
 <hr>
-<hr>
-<p>#Problem Description</p>
+<section id="problem-description" class="level1">
+<h1>Problem Description</h1>
 <section id="problem-domain" class="level2">
 <h2 class="anchored" data-anchor-id="problem-domain">Problem Domain</h2>
-<p>The problem domain encompasses the visibility and accessibility of VCU sports information for students and the broader Richmond community. While VCU is recognized for its community engagement, students face challenges in staying informed about VCU sports, including tryouts, job openings, player stats, game schedules, and events.</p>
-<section id="context-and-history" class="level3">
-<h3 class="anchored" data-anchor-id="context-and-history">Context and History</h3>
-<p>Richmond, known for its vibrant murals, also has a rich sports culture. However, the connection between VCU sports and students has not been fully realized. By providing a centralized resource, we aim to enhance awareness and participation in VCU sports.</p>
-</section>
+<p>VCU is known for their community engagement, but there isn’t much visibility for students to see VCU sports. Students struggle to find sports updates like information about tryouts, job openings, etc. We found that students have a difficult time finding player stats, game schedules, and events.</p>
 </section>
 <section id="need-for-a-database" class="level2">
 <h2 class="anchored" data-anchor-id="need-for-a-database">Need for a Database</h2>
-<p>A dedicated database is essential to address the communication gap between VCU sports and its community. This database will:</p>
-<ul>
-<li>Engage students with VCU sports.</li>
-<li>Raise awareness of VCU athletics in the Richmond area.</li>
-<li>Consolidate sports information in one accessible location, improving visibility for all stakeholders.</li>
-</ul>
+<p>We want to provide the VCU community with a tool that engages all students to VCU sports. By creating this database we are creating an awareness of VCU sports not only to VCU students, but extending it to the Richmond community and eventually elevating the level and resources of the sports. Also, this database will provide an easy way to visualize all sports information in one place.</p>
 </section>
 <section id="context-scope-and-perspective" class="level2">
 <h2 class="anchored" data-anchor-id="context-scope-and-perspective">Context, Scope, and Perspective</h2>
-<p>The database will serve various user roles, including athletes, coaches, sponsors, agents, and fans. Our goal is to ensure accessibility for everyone, creating a user-friendly platform. The database will cover:</p>
-<ul>
-<li>Score tracking and game results.</li>
-<li>Player and coach information.</li>
-<li>Statistics and contact details for student-athletes to facilitate professional opportunities.</li>
-</ul>
+<p>This database is for athletes, coaches, sponsors, agents, and fans. We want this database to be accessible for everybody. This database should be user friendly and easy to access. The scope of the database includes score tracking, sports positions, games and whether the team won or lose, peoples information like student-athlete information, coach information. Moreover, the database will provide visibility for athletes that want to professionalize after college, by updating their individual information like stats and contact information for agents to reach out.</p>
 </section>
 <section id="user-roles-and-use-cases" class="level2">
 <h2 class="anchored" data-anchor-id="user-roles-and-use-cases">User Roles and Use Cases</h2>
@@ -88,14 +74,14 @@ ul.task-list li input[type="checkbox"] {
 <section id="coaches" class="level3">
 <h3 class="anchored" data-anchor-id="coaches">Coaches</h3>
 <ul>
-<li><strong>Needs</strong>: Information on upcoming games and team performance.</li>
+<li><strong>Needs</strong>: Information on upcoming games and individual student and team performance.</li>
 <li><strong>Usage</strong>: Update job openings and player information.</li>
 </ul>
 </section>
 <section id="fans-richmond-community" class="level3">
 <h3 class="anchored" data-anchor-id="fans-richmond-community">Fans / Richmond Community</h3>
 <ul>
-<li><strong>Needs</strong>: Information on games, rosters, and results.</li>
+<li><strong>Needs</strong>: Information on games, rosters, and game results.</li>
 <li><strong>Usage</strong>: Stay updated on events and job opportunities.</li>
 </ul>
 </section>
@@ -105,7 +91,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Needs</strong>: Access to athlete stats and community engagement metrics.</li>
 <li><strong>Usage</strong>: Connect with athletes and teams for potential sponsorships and recruitment.</li>
 </ul>
-<p>This database will facilitate new connections, potentially increasing VCU sports budgets and attracting more student-athletes through demonstrated professional opportunities.</p>
+<p>This database will provide information that will potentially create new connections like sponsors with student-athletes/teams, and agents with student-athletes. These new connections may have further effects in VCU sports, by increasing their budget through the sponsors, or increasing the number of student-athletes enrolled in VCU because they see the opportunities that past athletes have received to go play professionally.</p>
 </section>
 </section>
 <section id="security-and-privacy" class="level2">
@@ -113,6 +99,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="access-control" class="level3">
 <h3 class="anchored" data-anchor-id="access-control">Access Control</h3>
 <ul>
+<li>The database will be publicly accessible, promoting transparency while safeguarding sensitive information.</li>
 <li>All users (students, coaches, fans, sponsors, agents) can read the database.</li>
 <li>VCU admin can read and edit information after user authentication.</li>
 </ul>
@@ -124,6 +111,13 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>The database will be publicly accessible, promoting transparency while safeguarding sensitive information.</p>
 </section>
+</section>
+</section>
+<section id="databse-design" class="level1">
+<h1>Databse Design</h1>
+</section>
+<section id="project-managment" class="level1">
+<h1>Project Managment</h1>
 </section>
 
 </main>
@@ -163,7 +157,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -195,47 +200,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -270,11 +235,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
+      return note.innerHTML;
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -1,5 +1,5 @@
 title: VCU Sports Database 
-date: 
+date: September 27, 2024
 authors:
     - name: Natalia Tondi
       email: tondin@vcu.edu
@@ -11,9 +11,6 @@ format:
         html-math-method: katex
         theme: spacelab
 ---
-
----
-<<<<<<< HEAD
 
 #Problem Description
 

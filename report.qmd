@@ -18,27 +18,15 @@ format:
 
 ## Problem Domain
 
-The problem domain encompasses the visibility and accessibility of VCU sports information for students and the broader Richmond community. While VCU is recognized for its community engagement, students face challenges in staying informed about VCU sports, including tryouts, job openings, player stats, game schedules, and events. 
-
-### Context and History
-
-Richmond, known for its vibrant murals, also has a rich sports culture. However, the connection between VCU sports and students has not been fully realized. By providing a centralized resource, we aim to enhance awareness and participation in VCU sports.
+VCU is known for their community engagement, but there isn’t much visibility for students to see VCU sports. Students struggle to find sports updates like information about tryouts, job openings, etc. We found that students have a difficult time finding player stats, game schedules, and events. 
 
 ## Need for a Database
 
-A dedicated database is essential to address the communication gap between VCU sports and its community. This database will:
-
-- Engage students with VCU sports.
-- Raise awareness of VCU athletics in the Richmond area.
-- Consolidate sports information in one accessible location, improving visibility for all stakeholders.
+We want to provide the VCU community with a tool that engages all students to VCU sports. By creating this database we are creating an awareness of VCU sports not only to VCU students, but extending it to the Richmond community and eventually elevating the level and resources of the sports. Also, this database will provide an easy way to visualize all sports information in one place.
 
 ## Context, Scope, and Perspective
 
-The database will serve various user roles, including athletes, coaches, sponsors, agents, and fans. Our goal is to ensure accessibility for everyone, creating a user-friendly platform. The database will cover:
-
-- Score tracking and game results.
-- Player and coach information.
-- Statistics and contact details for student-athletes to facilitate professional opportunities.
+This database is for athletes, coaches, sponsors, agents, and fans. We want this database to be accessible for everybody. This database should be user friendly and easy to access. The scope of the database includes score tracking, sports positions, games and whether the team won or lose, peoples information like student-athlete information, coach information. Moreover, the database will provide visibility for athletes that want to professionalize after college, by updating their individual information like stats and contact information for agents to reach out.
 
 ## User Roles and Use Cases
 
@@ -47,28 +35,26 @@ The database will serve various user roles, including athletes, coaches, sponsor
 - **Usage**: Check statistics, stay informed on other sports.
 
 ### Coaches
-- **Needs**: Information on upcoming games and team performance.
+- **Needs**: Information on upcoming games and individual student and team performance.
 - **Usage**: Update job openings and player information.
 
 ### Fans / Richmond Community
-- **Needs**: Information on games, rosters, and results.
+- **Needs**: Information on games, rosters, and game results.
 - **Usage**: Stay updated on events and job opportunities.
 
 ### Sponsors and Agents
 - **Needs**: Access to athlete stats and community engagement metrics.
 - **Usage**: Connect with athletes and teams for potential sponsorships and recruitment.
 
-This database will facilitate new connections, potentially increasing VCU sports budgets and attracting more student-athletes through demonstrated professional opportunities.
+This database will provide information that will potentially create new connections like sponsors with student-athletes/teams, and agents with student-athletes. These new connections may have further effects in VCU sports, by increasing their budget through the sponsors, or increasing the number of student-athletes enrolled in VCU because they see the opportunities that past athletes have received to go play professionally. 
 
 ## Security and Privacy
 
 ### Access Control
+- The database will be publicly accessible, promoting transparency while safeguarding sensitive information.
 - All users (students, coaches, fans, sponsors, agents) can read the database.
 - VCU admin can read and edit information after user authentication.
 
 ### Data Encryption
 - Student-athlete contact information will be encrypted, accessible only to sponsors, agents, and coaches upon verification of their credentials.
-
-The database will be publicly accessible, promoting transparency while safeguarding sensitive information.
-
 

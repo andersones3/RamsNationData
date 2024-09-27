@@ -12,7 +12,7 @@ format:
         theme: spacelab
 ---
 
-#Problem Description
+# Problem Description
 
 ## Problem Domain
 
@@ -59,3 +59,6 @@ This database will provide information that will potentially create new connecti
 The database will be publicly accessible, promoting transparency while safeguarding sensitive information.
 
 
+# Databse Design
+
+# Project Managment

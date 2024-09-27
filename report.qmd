@@ -1,1 +1,8 @@
+VCU is known for their community engagement, but there isn’t much visibility for students to see VCU sports. Students struggle to find sports updates like information about tryouts, job openings, etc. We found that students have a difficult time finding player stats, game schedules, and events. 
+We want to provide the VCU community with a tool that engages all students to VCU sports. 
+
+By creating this database we are creating an awareness of VCU sports not only to VCU students, but extending it to the Richmond community and eventually elevating the level and resources of the sports. Also, this database will provide an easy way to visualize all sports information in one place. 
+
+This database is for athletes, coaches, sponsors, and VCU fans. We want this database to be accessible for everybody and possibly reach out to sponsors that might be interested in a sponsorship with VCU sports. This database should be user friendly and easy to access. The scope of the database includes score tracking, sports positions, games and whether the team won or lose, peoples information like student-athlete information, coach information
+
 

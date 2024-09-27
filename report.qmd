@@ -1,3 +1,17 @@
+title: Study Guide for Quiz 3
+date: 09-22-24 
+author:
+    - names: Erin Anderson
+      email: andersones3@vcu.edu
+format:
+    html:
+        embed-resources: true
+        html-math-method: katex
+        theme: spacelab
+---
+
+## Project D
+
 VCU is known for their community engagement, but there isn’t much visibility for students to see VCU sports. Students struggle to find sports updates like information about tryouts, job openings, etc. We found that students have a difficult time finding player stats, game schedules, and events. 
 We want to provide the VCU community with a tool that engages all students to VCU sports. 
 

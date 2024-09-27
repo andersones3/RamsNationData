@@ -40,10 +40,6 @@ The database will serve various user roles, including athletes, coaches, sponsor
 - Player and coach information.
 - Statistics and contact details for student-athletes to facilitate professional opportunities.
 
-## Motivation
-
-Our team’s interest in sports, particularly basketball and volleyball, drives our passion for this project. As an international student-athlete, I understand the difficulties faced by family and friends in staying updated on VCU sports. This database will not only connect athletes with their families but also strengthen community ties.
-
 ## User Roles and Use Cases
 
 ### Student Athletes

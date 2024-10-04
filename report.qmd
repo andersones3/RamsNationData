@@ -114,7 +114,7 @@ erDiagram
     }
 
     BASKETBALL_STATS {
-        string BaseballID PK
+        string BasketballID PK
         int Points
         int Assists
         int Rebounds
@@ -184,7 +184,7 @@ STUDENT_ATHLETE table
 
 
 
-
+StudentID --> FirstName, LastName, Age, Email, Gender, Year, Position, SportID.
 Constraints: Each student has a unique StudentID. Gender is restricted to Male/Female/Other. 
 
 
@@ -193,7 +193,7 @@ SPORT table
 
 
 
-
+SportID --> TypeOfSport, SeasonEndDate, SeasonStartDate, TeamRecord.
 Constraints: Each sport has a unique SportID. SeasonEndDate should be after SeasonStartDate.
 
 
@@ -202,7 +202,7 @@ GAMES table:
 
 
 
-
+GameID --> Date, Result, VenueID.
 Constraints: Each game has a unique GameID. Result is restricted to (win, lose or tie). 
 
 
@@ -210,7 +210,7 @@ ATHLETIC_DEPARTMENT:
 
 
 
-
+StaffID --> FirstName, LastName, Email, JobTitle, SportID.
 Constraints: Each member should have a unique StaffID. 
 
 
@@ -218,7 +218,7 @@ VENUE:
 
 
 
-
+VenueID --> TypeOfSport, LocationName.
 Constraints: Each venue should have a unique VenueID.
 
 STATS:
@@ -226,7 +226,7 @@ STATS:
 
 
 
-
+StatID --> SportID, AthleteID.
 Constraints: Each stat has a unique StatID. SportID and AthleteId should not be NULL.
 
 
@@ -235,7 +235,7 @@ BASKETBALL_STATS:
 
 
 
-
+BasketballID --> Points, Assists, Blocks, Rebounds.
 Constraints: SportID should not be NULL.
 
 
@@ -244,7 +244,7 @@ VOLLEYBALL_STATS:
 
 
 
-
+VolleyballID --> Digs, Kills, Blocks.
 Constraints: SportID should not be NULL.
 
 SOCCER_STATS:
@@ -252,7 +252,7 @@ SOCCER_STATS:
 
 
 
-
+SoccerID --> Goals, Assists, Saves.
 Constraints: SportID should not be NULL.
 
 
@@ -261,7 +261,7 @@ FIELD_HOCKEY_STATS:
 
 
 
-
+FieldHockeyID --> Goals, Assists, Saves.
 Constraints: SportID should not be NULL.
  
 
@@ -270,7 +270,7 @@ BASEBALL_STATS:
 
 
 
-
+BaseballID --> Hits, Runs, Homeruns, RIBs.
 Constraints: SportID should not be NULL.
 
 
@@ -279,7 +279,7 @@ TRACK_AND_FIELD_STATS:
 
 
 
-
+TrackID --> Time, Height, Distance.
 Constraints: SportID should not be NULL.
 
 
@@ -288,7 +288,7 @@ LACROSSE_STATS:
 
 
 
-Functional dependencies:
+LacrosseID --> Goals, GroundBalls, Saves, Shots.
 Constraints: SportID should not be NULL.
 
 

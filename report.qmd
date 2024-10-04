@@ -163,11 +163,16 @@ erDiagram
         float Distance
         float Height
     }
+    SPORT_GAMES {
+        string SportID FK 
+        string GameID FK 
+    }
 
+    SPORT ||--o{ SPORT_GAMES : "has"
+    GAMES ||--o{ SPORT_GAMES : "includes"
     STUDENT_ATHLETE ||--o{ SPORT : "plays"
     STUDENT_ATHLETE ||--o{ STATS : "has"
     SPORT ||--o{ ATHLETIC_DEPARTMENT : "managed by"
-    SPORT }o --o{ GAMES : "play"
     GAMES ||--o{ VENUE : "held at"
     STATS ||--o{ BASKETBALL_STATS : "includes"
     STATS ||--o{ VOLLEYBALL_STATS : "includes"
@@ -178,7 +183,7 @@ erDiagram
     STATS ||--o{ TRACK_AND_FIELD_STATS : "includes"
 ```
 
-RELATIONAL SCHEMAS:
+### RELATIONAL SCHEMAS:
 
 STUDENT_ATHLETE table
 
@@ -205,6 +210,14 @@ GAMES table:
 GameID --> Date, Result, VenueID.
 Constraints: Each game has a unique GameID. Result is restricted to (win, lose or tie). 
 
+SPORT_GAMES table:
+
+
+
+
+
+No functional dependencies.
+Constraints: The combination of SportID and GameID is unique.
 
 ATHLETIC_DEPARTMENT:
 
@@ -292,5 +305,32 @@ LacrosseID --> Goals, GroundBalls, Saves, Shots.
 Constraints: SportID should not be NULL.
 
 
+### FUNCTIONAL DEPENDENCIES AND NORMALIZATION:
 
+In our proposed database schema, we identified functional dependencies to ensure proper normalization. Each table has a unique identifier, which confirms that no decomposition is necessary, as all functional dependencies involve a superkey. We also checked for multi-valued dependencies to ensure compliance with 4NF, finding none that required decomposition. This careful analysis guarantees a lossless decomposition, allowing us to maintain data integrity while optimizing the schema for efficient querying in both BCNF and 4NF.
+
+To resolve the many-to-many relationship between Sport and Games, we created a junction table named SportGames. This table includes foreign keys referencing the primary keys of both the Sport table and the Games table, specifically SportID and GameID. By doing this, each record in SportGames represents a unique combination of a sport and a game, allowing for multiple sports to be associated with multiple games without duplicating data. This structure not only maintains referential integrity but also simplifies querying relationships between the two entities, effectively addressing the many-to-many dependency in the database schema.
 # Project Managment
+
+
+```{r}
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+
+# Create a data frame for the Gantt chart
+tasks <- data.frame(
+  task = c("Task 1", "Task 2", "Task 3", "Task 4"),
+  start = as.Date(c("2024-10-01", "2024-10-05", "2024-10-10", "2024-10-15")),
+  end = as.Date(c("2024-10-04", "2024-10-07", "2024-10-12", "2024-10-20"))
+)
+
+# Create a Gantt chart
+ggplot(tasks, aes(x = start, xend = end, y = task)) +
+  geom_segment(aes(yend = task), size = 5, color = "skyblue") +
+  labs(title = "Project Timeline", x = "Date", y = "Tasks") +
+  theme_minimal() +
+  theme(panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank())
+
+  ```
+  

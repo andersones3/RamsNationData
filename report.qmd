@@ -61,4 +61,236 @@ The database will be publicly accessible, promoting transparency while safeguard
 
 # Databse Design
 
+Entity-Relational Diagram (w/Crow's foot notation)
+
+```{mermaid}
+erDiagram
+    STUDENT_ATHLETE {
+        string StudentID PK
+        string FirstName
+        string LastName
+        string Email
+        int Age
+        string Year
+        string Gender
+        string Position
+        string SportID FK
+    }
+
+    SPORT {
+        string SportID PK
+        string TypeOfSport
+        date SeasonStartDate
+        date SeasonEndDate
+        string TeamRecord
+    }
+
+    GAMES {
+        string GameID PK
+        string Date
+        string Result
+        string VenueID FK
+    }
+
+    VENUE {
+        string VenueID PK
+        string TypeOfSport
+        string LocationName
+    }
+
+    ATHLETIC_DEPARTMENT {
+        string StaffID PK
+        string FirstName
+        string LastName
+        string Email
+        string JobTitle
+        string SportID FK
+    }
+
+    STATS {
+        string StatID PK
+        string SportID FK
+        string AthleteID FK
+    }
+
+    BASKETBALL_STATS {
+        string BaseballID PK
+        int Points
+        int Assists
+        int Rebounds
+        int Blocks
+    }
+    VOLLEYBALL_STATS {
+        string VolleyballID PK
+        int Kills
+        int Digs
+        int Blocks
+    }
+
+    SOCCER_STATS {
+        string SoccerID PK
+        int Goals
+        int Assists
+        int Saves
+    }
+
+    BASEBALL_STATS {
+        string BaseballID PK
+        int Hits
+        int Runs
+        int Homeruns
+        int RIBs
+    }
+
+    LACROSSE_STATS {
+        string LacrosseID PK
+        int Goals
+        int Assists
+        int Shots
+        int GroundBalls
+    }
+
+    FIELD_HOCKEY_STATS {
+        string FieldHockeyID PK
+        int Goals
+        int Assists
+        int Saves
+    }
+
+    TRACK_AND_FIELD_STATS {
+        string TrackID PK
+        float Time
+        float Distance
+        float Height
+    }
+
+    STUDENT_ATHLETE ||--o{ SPORT : "plays"
+    STUDENT_ATHLETE ||--o{ STATS : "has"
+    SPORT ||--o{ ATHLETIC_DEPARTMENT : "managed by"
+    SPORT }o --o{ GAMES : "play"
+    GAMES ||--o{ VENUE : "held at"
+    STATS ||--o{ BASKETBALL_STATS : "includes"
+    STATS ||--o{ VOLLEYBALL_STATS : "includes"
+    STATS ||--o{ SOCCER_STATS : "includes"
+    STATS ||--o{ BASEBALL_STATS : "includes"
+    STATS ||--o{ LACROSSE_STATS : "includes"
+    STATS ||--o{ FIELD_HOCKEY_STATS : "includes"
+    STATS ||--o{ TRACK_AND_FIELD_STATS : "includes"
+```
+
+RELATIONAL SCHEMAS:
+
+STUDENT_ATHLETE table
+
+
+
+
+Constraints: Each student has a unique StudentID. Gender is restricted to Male/Female/Other. 
+
+
+SPORT table
+
+
+
+
+
+Constraints: Each sport has a unique SportID. SeasonEndDate should be after SeasonStartDate.
+
+
+GAMES table:
+
+
+
+
+
+Constraints: Each game has a unique GameID. Result is restricted to (win, lose or tie). 
+
+
+ATHLETIC_DEPARTMENT:
+
+
+
+
+Constraints: Each member should have a unique StaffID. 
+
+
+VENUE:
+
+
+
+
+Constraints: Each venue should have a unique VenueID.
+
+STATS:
+
+
+
+
+
+Constraints: Each stat has a unique StatID. SportID and AthleteId should not be NULL.
+
+
+BASKETBALL_STATS:
+
+
+
+
+
+Constraints: SportID should not be NULL.
+
+
+VOLLEYBALL_STATS:
+
+
+
+
+
+Constraints: SportID should not be NULL.
+
+SOCCER_STATS:
+
+
+
+
+
+Constraints: SportID should not be NULL.
+
+
+FIELD_HOCKEY_STATS:
+
+
+
+
+
+Constraints: SportID should not be NULL.
+ 
+
+BASEBALL_STATS:
+
+
+
+
+
+Constraints: SportID should not be NULL.
+
+
+TRACK_AND_FIELD_STATS:
+
+
+
+
+
+Constraints: SportID should not be NULL.
+
+
+LACROSSE_STATS:
+
+
+
+
+Functional dependencies:
+Constraints: SportID should not be NULL.
+
+
+
 # Project Managment

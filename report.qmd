@@ -312,25 +312,19 @@ In our proposed database schema, we identified functional dependencies to ensure
 To resolve the many-to-many relationship between Sport and Games, we created a junction table named SportGames. This table includes foreign keys referencing the primary keys of both the Sport table and the Games table, specifically SportID and GameID. By doing this, each record in SportGames represents a unique combination of a sport and a game, allowing for multiple sports to be associated with multiple games without duplicating data. This structure not only maintains referential integrity but also simplifies querying relationships between the two entities, effectively addressing the many-to-many dependency in the database schema.
 # Project Managment
 
-
-```{r}
-# Load required libraries
-library(ggplot2)
-library(dplyr)
-
-# Create a data frame for the Gantt chart
-tasks <- data.frame(
-  task = c("Task 1", "Task 2", "Task 3", "Task 4"),
-  start = as.Date(c("2024-10-01", "2024-10-05", "2024-10-10", "2024-10-15")),
-  end = as.Date(c("2024-10-04", "2024-10-07", "2024-10-12", "2024-10-20"))
-)
-
-# Create a Gantt chart
-ggplot(tasks, aes(x = start, xend = end, y = task)) +
-  geom_segment(aes(yend = task), size = 5, color = "skyblue") +
-  labs(title = "Project Timeline", x = "Date", y = "Tasks") +
-  theme_minimal() +
-  theme(panel.grid.major.y = element_blank(), panel.grid.minor.y = element_blank())
-
-  ```
+```{mermaid}
+gantt
+    title Project Timeline
+    dateFormat  YYYY-MM-DD
+    section Research
+    Literature Review     :a1, 2024-10-01, 10d
+    Data Collection       :a2, after a1, 5d
+    section Development
+    Design Phase          :b1, 2024-10-15, 7d
+    Implementation        :b2, after b1, 15d
+    Testing               :b3, after b2, 5d
+    section Deployment
+    Final Review          :c1, 2024-11-10, 3d
+    Deployment            :c2, after c1, 2d
+```
   
